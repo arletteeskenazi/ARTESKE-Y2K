@@ -40,7 +40,7 @@ document.body.appendChild(
 renderer.domElement);
 
 // ======================
-// LUCES Y2K
+// LUCES Y2K 
 // ======================
 
 const ambientLight =
@@ -188,8 +188,8 @@ logoGroup
 
 let velocity = {
 
-x:0.45,
-y:0.28
+x:0.38,
+y:0.24
 
 };
 
@@ -327,8 +327,17 @@ velocity.y;
 
 // TODA LA PANTALLA
 
-const limitX = 50;
-const limitY = 25;
+// límites dinámicos según pantalla
+
+const limitX =
+window.innerWidth < 768
+? 22
+: 40;
+
+const limitY =
+window.innerWidth < 768
+? 10
+: 20;
 
 if(
 logoGroup.position.x >
