@@ -189,7 +189,7 @@ logoGroup
 let velocity = {
 
 x:0.38,
-y:0.24
+y:0.20
 
 };
 
@@ -300,7 +300,7 @@ logoGroup.scale.set(
 // empieza al centro
 logoGroup.position.set(
 0,
-0,
+14,
 0
 );
 
@@ -331,13 +331,13 @@ velocity.y;
 
 const limitX =
 window.innerWidth < 768
-? 22
-: 40;
+? 18
+: 34;
 
 const limitY =
 window.innerWidth < 768
-? 10
-: 20;
+? 5
+: 12;
 
 if(
 logoGroup.position.x >
